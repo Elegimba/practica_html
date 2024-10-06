@@ -28,3 +28,53 @@
     --han: "Handlee", cursive;
 }
 
+/* Los breakpoints son 
+0 - 600px → movil
+601px - 768px → tablet
+769px - 1004px → Desktop */
+
+/* Layout general */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--Montse);
+    font-size: var(--tamañofuente);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    font-weight: 700;
+    color: var(--rojo);
+    padding: 0;
+    margin: 0.3125rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--rojo);
+    color: white;
+    font-family: var(--Montse);
+    text-decoration: none;
+    padding: 1.25rem;
+}
+
+/* Inicio header */
