@@ -78,3 +78,71 @@ button {
 }
 
 /* Inicio header */
+
+header {
+    
+
+    nav:first-child {
+        background-color: var(--oscuro);
+        padding: 20px 0;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-size: 2rem;
+            text-decoration: none;
+
+            a {
+                display: inline-block;
+                color: var(--rojo);
+                width: 100%;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+
+        figure {
+            width: 20%;
+            padding-top: 1.25rem;
+        }
+
+        .hamburguesa {
+            width: 2rem;
+            margin-top: 0.7rem;
+            cursor: pointer;
+            text-align: end;
+
+            div {
+                background-color: rgb(173, 173, 173);
+                width: 1.875rem;
+                height: 0.125rem;
+                margin: 0.6rem 0;
+            }
+        }
+
+        nav {
+            width: 100%;
+            margin: 1.875rem 0;
+            
+            li {
+                border-top: 0.09375rem solid rgb(173, 173, 173);
+                color: rgb(173, 173, 173);
+                padding: 1.25rem;
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+
+            li:first-child {
+                color: var(--rojo);
+                border-top: transparent;
+            }
+        }
+    }
+}
