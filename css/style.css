@@ -84,7 +84,7 @@ header {
 
     nav:first-child {
         background-color: var(--oscuro);
-        padding: 20px 0;
+        padding: 1.5625rem 0;
 
         ul {
             width: 100%;
