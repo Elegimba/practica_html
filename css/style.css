@@ -46,6 +46,7 @@ html {
 body {
     font-family: var(--Montse);
     font-size: var(--tamañofuente);
+    font-weight: 500;
 }
 
 img {
@@ -74,7 +75,6 @@ button {
     color: white;
     font-family: var(--Montse);
     font-size: 1.25rem;
-    font-weight: 500;
     text-decoration: none;
     padding: 1.5rem;
 }
@@ -138,7 +138,6 @@ header {
 
                 padding: 1.25rem;
                 font-size: 1.25rem;
-                font-weight: 500;
             }
 
             li:first-child {
@@ -176,7 +175,6 @@ header {
 
     p {
         font-size: 1.5625rem;
-        font-weight: 500;
         margin: 1.25rem 0;
     }
 
@@ -214,42 +212,42 @@ h2 {
     }
 }
 
-.servicios div>p, .about div:first-child>p {
+.servicios div>p,
+.about div:first-child>p {
     text-align: center;
     color: var(--rojo);
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
 }
 
 hr {
-    width: 120px;
-    height: 3px;
+    width: 7.5rem;
+    height: 0.1875rem;
     background-color: var(--rojo);
     border: none;
-    transform: translateY(-23px)
+    transform: translateY(-1.4375rem)
 }
 
 .servicios {
     margin: 3.125rem 0;
 
     li {
-        font-size: 22.5px;
-        font-weight: 500;
+        font-size: 1.40625rem;
         color: rgb(95, 95, 95);
-        line-height: 30px;
-        border-bottom: 1px solid rgb(97, 97, 97);
-        padding-bottom: 20px;
-        margin-bottom: 30px;
+        line-height: 1.875rem;
+        border-bottom: 0.0625rem solid rgb(97, 97, 97);
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.875rem;
 
         button {
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 
     li>i {
-        border: 1px solid var(--rojo);
-        font-size: 30px;
-        padding: 15px;
+        border: 0.0625rem solid var(--rojo);
+        font-size: 1.875rem;
+        padding: 0.9375rem;
         color: var(--rojo);
         transform: rotateY(180deg);
     }
@@ -259,17 +257,18 @@ hr {
 
 h4 {
     color: black;
-    margin: 10px 0;
+    margin: 0.625rem 0;
     font-weight: 700;
-    font-size: 22.5px;
+    font-size: 1.40625rem;
 }
 
 .about {
-    margin: 100px 0;
+    margin: 6.25rem 0;
 
     figure {
-        border: 3px solid var(--rojo);
+        border: 0.1875rem solid var(--rojo);
         transform: rotate(10deg);
+        margin: 20px 0 60px 0;
 
         img {
             transform: rotate(-10deg);
@@ -280,20 +279,39 @@ h4 {
 
 
         p {
-            font-size: 22.5px;
-            font-weight: 500;
+            font-size: 1.40625rem;
             color: rgb(95, 95, 95);
-            line-height: 30px;
-            padding-bottom: 20px;
-            margin-bottom: 10px;
+            line-height: 1.875rem;
+            padding-bottom: 1.25rem;
+            margin-bottom: 0.625rem;
         }
 
         h5 {
             color: var(--rojo);
-            font-size: 20px;
-            font-weight: 500;
-            margin: 15px 0;
+            font-size: 1.25rem;
+            margin: 0.9375rem 0;
         }
     }
 }
 
+/* Inicio del footer */
+
+footer {
+    background-color: var(--oscuro);
+    position: sticky;
+    bottom: 0px;
+
+    p {
+        color: white;
+        text-align: center;
+        font-size: 1.375rem;
+        padding: 1.25rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+/* Inicio mediaqueris 601px - 768px → tablet */
