@@ -73,14 +73,16 @@ button {
     background-color: var(--rojo);
     color: white;
     font-family: var(--Montse);
+    font-size: 1.25rem;
+    font-weight: 500;
     text-decoration: none;
-    padding: 1.25rem;
+    padding: 1.5rem;
 }
 
 /* Inicio header */
 
 header {
-    
+
 
     nav:first-child {
         background-color: var(--oscuro);
@@ -130,19 +132,71 @@ header {
         nav {
             width: 100%;
             margin: 1.875rem 0;
-            
+
             li {
                 border-top: 0.09375rem solid rgb(173, 173, 173);
-                color: rgb(173, 173, 173);
+
                 padding: 1.25rem;
                 font-size: 1.25rem;
                 font-weight: 500;
             }
 
             li:first-child {
-                color: var(--rojo);
                 border-top: transparent;
+
+                a:first-child {
+                    color: var(--rojo);
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(173, 173, 173);
             }
         }
+    }
+}
+
+/* Inicio del Hero */
+
+.hero {
+    height: 59.375rem;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #868686;
+    background-blend-mode: multiply;
+    align-content: center;
+
+    h1 {
+        font-family: var(--han);
+        font-size: 3rem;
+        color: white;
+    }
+
+    p {
+        font-size: 1.5625rem;
+        font-weight: 500;
+        margin: 1.25rem 0;
+    }
+
+    p:nth-child(2) {
+        color: var(--rojo);
+    }
+
+    p:nth-child(3) {
+        color: white;
+    }
+
+    ul {
+        display: flex;
+        font-size: 2.5rem;
+        width: 12.5rem;
+        justify-content: space-between;
+        margin-top: 1.25rem;
+    }
+
+    a {
+        color: white;
     }
 }
