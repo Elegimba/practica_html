@@ -268,10 +268,12 @@ h4 {
     figure {
         border: 0.1875rem solid var(--rojo);
         transform: rotate(10deg);
-        margin: 20px 0 60px 0;
+        width: 90%;
+        margin: 20px auto 60px auto;
 
         img {
             transform: rotate(-10deg);
+
         }
     }
 
@@ -300,6 +302,7 @@ footer {
     background-color: var(--oscuro);
     position: sticky;
     bottom: 0px;
+    
 
     p {
         color: white;
@@ -314,4 +317,81 @@ footer {
     }
 }
 
+#totop {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    background-color: var(--rojo);
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+    
+
+    i {
+        
+    }
+    
+
+}
+
 /* Inicio mediaqueris 601px - 768px → tablet */
+
+@media (min-width: 601px) {
+
+    .servicios ul {
+        display: flex;
+        flex-wrap: wrap;
+        
+        li {
+            width: 50%;
+            border: none;
+            font-size: 1rem;
+            border-left: 0.125rem solid rgb(185, 185, 185);
+            line-height: 1.2rem;
+            padding: 0 1.25rem;
+
+            h4{
+                font-size: 1.25rem;
+                padding: 0.625rem 0;
+            }
+
+            button {
+                padding: 0.625rem 0;
+            }
+        }
+
+        li:last-child {
+            width: 100%;
+        }
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+
+        div:first-child {
+            width: 100%;
+        }
+
+        div:nth-child(2) {
+            width: 45%;
+            margin-left: -25px;
+        }
+
+        div:last-child {
+            width: 55%;
+        
+            padding: 0 20px;
+
+            p {
+                font-size: 1rem;
+                line-height: 1.2rem;
+                width: 120%;
+            }
+
+        }
+
+}
