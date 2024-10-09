@@ -328,15 +328,10 @@ footer {
     position: fixed;
     bottom: 5rem;
     right: 0.625rem;
-    background-color: var(--rojo);
+    color: var(--rojo);
     border-radius: 0.3125rem;
     font-size: 2.5rem;
     text-align: center;
-
-
-    i {}
-
-
 }
 
 /* Inicio mediaqueries 601px - 768px → tablet */
@@ -569,9 +564,5 @@ footer {
             color: var(--rojo);
         }
         
-    }
-
-    #totop {
-        display: none;
     }
 }
