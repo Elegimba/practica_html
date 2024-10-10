@@ -256,6 +256,9 @@ hr {
         transform: rotateY(180deg);
     }
 
+    button {
+        cursor: pointer;
+    }
 
 }
 
